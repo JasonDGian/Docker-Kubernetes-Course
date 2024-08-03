@@ -48,8 +48,16 @@ Comparing VMs with Docker we can argue the following pro and cons.
       <td>Reproducing on another workstation/server is possible but may still be tricky</td>
    </tr>
 </table>
+
+<p align="center">
+   <img height="320px" src="https://github.com/user-attachments/assets/a41d4fa7-cb89-49de-9610-6bf59c1209cc">
+</p>
   
 ---
+
+
+
+
 
 
 
