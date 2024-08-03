@@ -55,9 +55,27 @@ Comparing VMs with Docker we can argue the following pro and cons.
   
 ---
 
+# Docker Installation
+Docker can be installed on **macOS**, **Windows**, and **Linux**, with each operating system having specific requirements that must be met before installation.
+
+## 🍎 MacOS & 🪟 Windows.
+Depending on your device's specifications, you will need to install either **Docker Desktop** or **Docker Toolbox**:
+    - **Docker Desktop**: This is the 'standard' version for devices that meet the system requirements.
+    - **Docker Toolbox**: An alternative for devices that do not meet the requirements for Docker Desktop.
+
+## 🐧 Linux
+On Linux the operating system natively supports containers and the associated technology. For the installation follow the official resources.
+
+- - - TODO - - -
+    - SIMPLE GUIDE
+- - - - - - - - 
+
+---
 
 
+### Windows installation.
 
-
-
+### Check requirements.
+### Get the installer.
+### Run the installer.
 
