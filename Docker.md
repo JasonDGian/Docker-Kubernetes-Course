@@ -19,7 +19,10 @@ When a software application requires a specific version of a dependency to run c
 - Containers are standardized software units composed by [ `code` + `dependency` ].
 - Using containers:
     - Eliminates dependency inconsistency problems and ensures the same environment for development and production .
-    - Allows developers to distribute and run 'ready-to-use' applications and server-like utilities.
+    - Project dockerization: Lets developers distribute and run ready-to-use applications and server utilities.
+    - Seamless version switch: Enables developers to use different dependency versions on the same machine without conflicts.
+
+  
 
 ---
 
