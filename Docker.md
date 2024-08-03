@@ -22,7 +22,34 @@ When a software application requires a specific version of a dependency to run c
     - Project dockerization: Lets developers distribute and run ready-to-use applications and server utilities.
     - Seamless version switch: Enables developers to use different dependency versions on the same machine without conflicts.
 
-  
+## Docker containers VS Virtual Machines.
+Docker containers provides similar functionality to conventional virtual machines, but there are key differences in their weight and computational cost. Docker containers are lighter and more efficient than virtual machines, which makes them faster to start and less resource-intensive. 
+- Easy of use.
+- Reduced set up time.
+- Reduced weight and computational cost.
 
+### Virtual machines in comparison with Docker containers.
+Comparing VMs with Docker we can argue the following pro and cons.
+<table>
+   <tr>
+      <th>PRO</th>
+      <th>CON</th>
+   </tr>
+   <tr>
+      <td>Separated environments.</td>
+      <td>Redundant duplication, waste of space.</td>
+   </tr>
+   <tr>
+      <td>Environment-specific configurations are possible.</td>
+      <td>Performance can be slow, boot times can be long.</td>
+   </tr>
+   <tr>
+      <td>Environment configurations can be shared and reproduced reliably.</td>
+      <td>Reproducing on another workstation/server is possible but may still be tricky</td>
+   </tr>
+</table>
+  
 ---
+
+
 
