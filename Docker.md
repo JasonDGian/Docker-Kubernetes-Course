@@ -76,6 +76,9 @@ On Linux the operating system natively supports containers and the associated te
 ### Windows installation.
 
 ### Check requirements.
+   #### System requirements.
+   #### Software requirements.
+   
 ### Get the installer.
 ### Run the installer.
 
