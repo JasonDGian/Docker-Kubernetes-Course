@@ -52,3 +52,16 @@ After enabling Hyper-V on your Windows 11 machine, you may want to configure som
 
   Further resources surrounding the enablement of these resources can be found here: [Hyper-V Resource Settings](https://learn.microsoft.com/es-es/training/modules/configure-manage-hyper-v/?WT.mc_id=academic-89565-abartolo)
 
+---
+
+# READ THIS
+In the original post this was not mentioned, therefore I wrote it down here. 
+
+After enabeling Hyper-V follow these steps to enable Containers on Windows. 
+ 1. Open PowerShell as administrator.
+ 2. Run the command `Enable-WindowsOptianlFeature -Online -FeatureName Microsoft-Hyper-V -All`
+ 3. Restart your machine.
+ 4. Run the command `Enable-WindowsOptianlFeature -Online -FeatureName containers -All`
+
+> [!Note]
+> If the terminal says something like "Command was not found" you are probably not running PowerShell as an administrator, try to close and re-open with administrator privileges.
