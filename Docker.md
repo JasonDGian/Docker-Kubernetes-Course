@@ -58,27 +58,29 @@ Comparing VMs with Docker we can argue the following pro and cons.
 # Docker Installation
 Docker can be installed on **macOS**, **Windows**, and **Linux**, with each operating system having specific requirements that must be met before installation.
 
-## 🍎 MacOS & 🪟 Windows.
+## Learning about system requirements.
+To learn about Docker's requirements access the ![official website](https://www.docker.com/) and clic on developers, then click on **Learn more about Docker**. You will be brought to the Docker documentation site. Click on **Install** entry within the left side pannel list. 
+
+
+
+<h2>
+<img  height="20px" src="https://github.com/user-attachments/assets/3f88a71f-b453-4490-9f70-d4defb6c5b01"> MacOS & <img  height="20px" src="https://github.com/user-attachments/assets/9e139738-eb29-4406-9579-8a433053d15e"> Windows.</h2>
+
+
 Depending on your device's specifications, you will need to install either **Docker Desktop** or **Docker Toolbox**:
     - **Docker Desktop**: This is the 'standard' version for devices that meet the system requirements.
     - **Docker Toolbox**: An alternative for devices that do not meet the requirements for Docker Desktop.
 
-## 🐧 Linux
-On Linux the operating system natively supports containers and the associated technology. For the installation follow the official resources.
-
-- - - TODO - - -
-    - SIMPLE GUIDE
-- - - - - - - - 
-
----
+<h2><img height="20px" src="https://github.com/user-attachments/assets/c51b89c4-c0bf-4e72-86f0-db15c6236101"> Linux  </h2>
+On Linux the operating system natively supports containers and the associated technology.    
+For the installation follow the [official resources](https://docs.docker.com/desktop/install/linux-install/) .   
 
 
-### Windows installation.
 
-### Check requirements.
-   #### System requirements.
-   #### Software requirements.
-   
-### Get the installer.
-### Run the installer.
+
+
+
+
+
+
 
