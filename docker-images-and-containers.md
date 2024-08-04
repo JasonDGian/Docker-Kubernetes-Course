@@ -15,5 +15,6 @@ A Docker image is like a blueprint or template that defines how a container shou
 is a runnable instance of an image, which means it is the live environment where the application runs. 
    
 Containers are created from images and can be started, stopped, moved, and deleted. While the image remains unchanged, the container can have a dynamic state, including changes to files or running processes.
-    
-![imagen](https://github.com/user-attachments/assets/bd44d695-73ae-4e95-b0f2-64d56f815fe7)
+
+<img width="48%" src="https://github.com/user-attachments/assets/bd44d695-73ae-4e95-b0f2-64d56f815fe7">
+<img width="48%" src="https://github.com/user-attachments/assets/cfa1564d-b715-4737-a2b7-579ec085ef40">
