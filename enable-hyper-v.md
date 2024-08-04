@@ -1,3 +1,7 @@
+> [!IMPORTANT]
+> Unlike other posts in my repos, this is a copy paste with a little bit of formatting from an official website of Microsoft Windows.   
+> **If you wish to see the original post you can find it [here](https://techcommunity.microsoft.com/t5/educator-developer-blog/step-by-step-enabling-hyper-v-for-use-on-windows-11/ba-p/3745905) .**
+
 # Enable Hyper-V on Windows 10 & Windows 11.
 This guide will show you how to check if your machine is Hyper-V compatible, and if so, how to enable it.
 
