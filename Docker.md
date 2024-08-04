@@ -1,3 +1,6 @@
+>[!WARNING]
+> These notes are my personal writings taken during my Udemy Docker & Kubernetes Course - paid version. Feel free to use these notes but beware some concepts may be obsolete by the time you read this or perhaps entirely wrong.  
+
 # What is Docker?
 Docker is a technology that simplifies the creation and management of software development _containers_. 
    
