@@ -1,5 +1,7 @@
 # Enable Hyper-V on Windows 10 & Windows 11.
 This guide will show you how to check if your machine is Hyper-V compatible, and if so, how to enable it.
+
+---
  
 ## Step 1: Check if your system is compatible. 
 Before you can enable Hyper-V on your Windows 11 machine, you need to make sure that your system is compatible. Here are the system requirements for Hyper-V on Windows 11:
@@ -14,6 +16,7 @@ Before you can enable Hyper-V on your Windows 11 machine, you need to make sure 
 2. Type `msinfo32` and press Enter.
 3. In the **System Information window**, scroll down to the **System Summary** section and look for the **Hyper-V Requirements** line. If it says "_Yes_", then your system is compatible.
 
+---
 
 ## Step 2: Enable Hyper-V on Windows 11
 Once you have confirmed that your system is compatible, you can proceed to enable Hyper-V on your Windows 10/11 machine.   
@@ -34,5 +37,14 @@ Here's how:
 
 ---
 
+## Step 3: Configure Hyper-V settings
+After enabling Hyper-V on your Windows 11 machine, you may want to configure some settings to optimize your virtual machine performance. Here are some settings you may want to consider:
 
+- **Virtual switch:** Hyper-V uses a virtual switch to connect virtual machines to your physical network. You can create a new virtual switch or use an existing one.
+ 
+- **Virtual machine settings:** You can configure various settings for your virtual machine, such as memory allocation, processor allocation, and network adapter settings.  
+    
+- **Integration services:** Hyper-V integration services enhance the performance and functionality of virtual machines. You can enable or disable integration services as needed.
+
+  Further resources surrounding the enablement of these resources can be found here: [Hyper-V Resource Settings](https://learn.microsoft.com/es-es/training/modules/configure-manage-hyper-v/?WT.mc_id=academic-89565-abartolo)
 
