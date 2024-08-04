@@ -59,9 +59,12 @@ In the original post this was not mentioned, therefore I wrote it down here.
 
 After enabeling Hyper-V follow these steps to enable Containers on Windows. 
  1. Open PowerShell as administrator.
- 2. Run the command `Enable-WindowsOptianlFeature -Online -FeatureName Microsoft-Hyper-V -All`
+ 2. Run the command `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All`
  3. Restart your machine.
- 4. Run the command `Enable-WindowsOptianlFeature -Online -FeatureName containers -All`
+ 4. Run the command `Enable-WindowsOptionalFeature -Online -FeatureName containers -All`
+
+![terminal](https://github.com/user-attachments/assets/9194dc69-38e5-4fa7-9959-511d3fc2b983)
+
 
 > [!Note]
 > If the terminal says something like "Command was not found" you are probably not running PowerShell as an administrator, try to close and re-open with administrator privileges.
