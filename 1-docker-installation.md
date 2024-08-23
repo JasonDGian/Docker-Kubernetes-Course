@@ -1,7 +1,7 @@
-# Docker Installation
+# 📌 Docker Installation
 Docker can be installed on **macOS**, **Windows**, and **Linux**, with each operating system having specific requirements that must be met before installation.
 
-## Learning about system requirements.
+## 🔹 Learning about system requirements.
 To learn about Docker's requirements access the ![official website](https://www.docker.com/) and clic on developers, then click on **Learn more about Docker**. You will be brought to the Docker documentation site. Click on **Install** entry within the left side pannel list. 
 
 
@@ -24,7 +24,7 @@ On Linux the operating system natively supports containers and the associated te
 
 For the installation follow the [official resources](https://docs.docker.com/desktop/install/linux-install) .  
 
-## Confirm the success of the installation.
+## 🔹 Confirm the success of the installation.
 To check if Docker successfully installed, open a terminal within your system, no matter which one, and type `docker`. A list of possible command switches will appear on scren, otherwise, if you encounter an error message something must have gone wrong during the installation process.
    
 ![docker command](https://github.com/user-attachments/assets/cabb9f65-42f1-495a-9f42-e085180ed99c)
@@ -34,7 +34,7 @@ Congratulations, you have now installed the DOCKER ENGINE.
    
 --- 
 
-# Create your first container.
+# 📌 Create your first container.
 
 >[!TIP]
 > By installing `Prettier`and `Docker` plugins on Visual Studio Code you will have a better experience while writing Docker configuration files.
