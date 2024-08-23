@@ -1,16 +1,16 @@
 >[!WARNING]
 > These notes are my personal writings taken during my Udemy Docker & Kubernetes Course - paid version. Feel free to use these notes but beware some concepts may be obsolete by the time you read this or perhaps entirely wrong.  
 
-# What is Docker?
+# 📌 What is Docker?
 Docker is a technology that simplifies the creation and management of software development _containers_. 
    
-## What is a _container_?
+## 🔹 What is a _container_?
 A container in software development is a **standardized unit of software**. This unit packages code and all its necessary dependencies to run correctly. This allows developers to distribute and run 'ready to use' applications and server-like utilities.
    
 > [!NOTE] 
 > Support for Containers is built into modern operating systems and is a _must know_ tech for any aspiring developer.
       
-## Why use containers?
+## 🔹 Why use containers?
 When a software application requires a specific version of a dependency to run correctly, using containers helps the developer ensure that the application always uses the correct version of that dependency. 
 
 > [!IMPORTANT]
@@ -25,13 +25,13 @@ When a software application requires a specific version of a dependency to run c
     - Project dockerization: Lets developers distribute and run ready-to-use applications and server utilities.
     - Seamless version switch: Enables developers to use different dependency versions on the same machine without conflicts.
 
-## Docker containers VS Virtual Machines.
+## 🔹 Docker containers VS Virtual Machines.
 Docker containers provides similar functionality to conventional virtual machines, but there are key differences in their weight and computational cost. Docker containers are lighter and more efficient than virtual machines, which makes them faster to start and less resource-intensive. 
 - Easy of use.
 - Reduced set up time.
 - Reduced weight and computational cost.
 
-### Virtual machines in comparison with Docker containers.
+### ▫️ Virtual machines in comparison with Docker containers.
 Comparing VMs with Docker we can argue the following pro and cons.
 <table>
    <tr>
