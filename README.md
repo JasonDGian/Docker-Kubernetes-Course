@@ -1,3 +1,20 @@
+# 📍 Index.
+0. [What is docker](README.md)   
+   - What is a container.
+   - Why use containers.
+   - Containers vs Virtual Machines. 
+1. [Docker installation](docker-installation.md)   
+      - What is a docker container.
+      - What is a docker image.
+      - Container vs Image.
+1.1. [Enabling hper V on windows](enable-hyper-v.md)   
+   - Checking compatibility.
+   - Enabling Hyper-V on Win11.
+2. [Images vs containers](dkr-images-and-containers.md)   
+
+
+---
+
 >[!WARNING]
 > These notes are my personal writings taken during my Udemy Docker & Kubernetes Course - paid version. Feel free to use these notes but beware some concepts may be obsolete by the time you read this or perhaps entirely wrong.  
 
@@ -57,3 +74,4 @@ Comparing VMs with Docker we can argue the following pro and cons.
 </p>
   
 ---
+
