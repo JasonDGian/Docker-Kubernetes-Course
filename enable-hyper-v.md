@@ -2,12 +2,12 @@
 > Unlike other posts in my repos, this is a copy paste with a little bit of formatting from an official website of Microsoft Windows.   
 > **If you wish to see the original post you can find it [here](https://techcommunity.microsoft.com/t5/educator-developer-blog/step-by-step-enabling-hyper-v-for-use-on-windows-11/ba-p/3745905) .**
 
-# Enable Hyper-V on Windows 10 & Windows 11.
+# 📌 Enable Hyper-V on Windows 10 & Windows 11.
 This guide will show you how to check if your machine is Hyper-V compatible, and if so, how to enable it.
 
 ---
  
-## Step 1: Check if your system is compatible. 
+## 🔹 Step 1: Check if your system is compatible. 
 Before you can enable Hyper-V on your Windows 11 machine, you need to make sure that your system is compatible. Here are the system requirements for Hyper-V on Windows 11:
 
 >    - Windows 11 Pro or Enterprise 64-bit Operating System 
@@ -15,14 +15,14 @@ Before you can enable Hyper-V on your Windows 11 machine, you need to make sure 
 >    - A minimum of 4 GB of RAM
 >    - BIOS-level hardware virtualization support
 
-### Steps to check if your system is compatible:
+### ▫️ Steps to check if your system is compatible:
 1. Press the `Windows key` + `R` to open the **Run** dialog box.
 2. Type `msinfo32` and press Enter.
 3. In the **System Information window**, scroll down to the **System Summary** section and look for the **Hyper-V Requirements** line. If it says "_Yes_", then your system is compatible.
 
 ---
 
-## Step 2: Enable Hyper-V on Windows 11
+## 🔹 Step 2: Enable Hyper-V on Windows 11
 Once you have confirmed that your system is compatible, you can proceed to enable Hyper-V on your Windows 10/11 machine.   
 Here's how:
 
@@ -41,7 +41,7 @@ Here's how:
 
 ---
 
-## Step 3: Configure Hyper-V settings
+## 🔹 Step 3: Configure Hyper-V settings
 After enabling Hyper-V on your Windows 11 machine, you may want to configure some settings to optimize your virtual machine performance. Here are some settings you may want to consider:
 
 - **Virtual switch:** Hyper-V uses a virtual switch to connect virtual machines to your physical network. You can create a new virtual switch or use an existing one.
