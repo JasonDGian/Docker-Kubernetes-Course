@@ -1,16 +1,16 @@
 # 📍 Index.
-0. [What is docker](README.md#what-is-docker)   
-   - What is a container.
-   - Why use containers.
-   - Containers vs Virtual Machines. 
-1. [Docker installation](1-docker-installation.md)   
-      - What is a docker container.
-      - What is a docker image.
-      - Container vs Image.
-1.1. [Enabling hper V on windows](1.1-enable-hyper-v.md)   
-   - Checking compatibility.
-   - Enabling Hyper-V on Win11.
-2. [Images vs containers](2-images-and-containers.md)   
+- [What is docker](README.md#what-is-docker)     
+   - What is a container.  
+   - Why use containers.   
+   - Containers vs Virtual Machines.   
+- [Docker installation](1-docker-installation.md)    
+   - What is a docker container.   
+   - What is a docker image.   
+   - Container vs Image.   
+- [Enabling hper V on windows](1.1-enable-hyper-v.md)    
+   - Checking compatibility.  
+   - Enabling Hyper-V on Win11.  
+- [Images vs containers](2-images-and-containers.md)   
 
 
 ---
