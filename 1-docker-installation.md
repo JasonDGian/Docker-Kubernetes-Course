@@ -17,7 +17,7 @@ Depending on your device's specifications, you will need to install either **Doc
 
 > [!IMPORTANT]
 > Hyper-V and Containers Windows features must be enable to install Docker Desktop on Windows.
-> To enable Hyper-V on Windows follow this link. [Enable Hyper-V fast guide](https://github.com/JasonDGian/Docker-Kubernetes-Course/blob/main/enable-hyper-v.md)
+> To enable Hyper-V on Windows follow this link. [Enable Hyper-V fast guide](https://github.com/JasonDGian/Docker-Kubernetes-Course/blob/main/1.2-enable-hyper-v.md)
 
 <h2><img height="20px" src="https://github.com/user-attachments/assets/c51b89c4-c0bf-4e72-86f0-db15c6236101"> Linux  </h2>
 On Linux the operating system natively supports containers and the associated technology.
