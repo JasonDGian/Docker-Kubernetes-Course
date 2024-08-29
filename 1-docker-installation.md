@@ -2,25 +2,46 @@
 Docker can be installed on **macOS**, **Windows**, and **Linux**, with each operating system having specific requirements that must be met before installation.
 
 ## 🔹 Learning about system requirements.
-To learn about Docker's requirements access the ![official website](https://www.docker.com/) and clic on developers, then click on **Learn more about Docker**. You will be brought to the Docker documentation site. Click on **Install** entry within the left side pannel list. 
-
-
-<h2>
-<img  height="20px" src="https://github.com/user-attachments/assets/3f88a71f-b453-4490-9f70-d4defb6c5b01"> MacOS & <img  height="20px" src="https://github.com/user-attachments/assets/9e139738-eb29-4406-9579-8a433053d15e"> Windows.</h2>
-
 Depending on your device's specifications, you will need to install either **Docker Desktop** or **Docker Toolbox**:   
 - **Docker Desktop**: This is the 'standard' version for devices that meet the system requirements.
 - **Docker Toolbox**: An alternative for devices that do not meet the requirements for Docker Desktop.
 
-> [!CAUTION]
-> For windows machines the installation is different depending on the OS version. **Windows Home** will have a different installation prodecure to **Windows Pro**. This is important because Home Edition will require WSL - Windows Subsistem Linux, while Proffesional Edition will only require Hyper-V.
+>[!tip]
+>To learn about Docker's requirements access the ![official documentation](https://docs.docker.com/desktop/install/mac-install/).
+
+<!-- h2>
+<img  height="20px" src="https://github.com/user-attachments/assets/3f88a71f-b453-4490-9f70-d4defb6c5b01"> MacOS.</h2 -->
+
+<h2><img  height="20px" src="https://github.com/user-attachments/assets/9e139738-eb29-4406-9579-8a433053d15e"> Installing on Windows.</h2>
+   
+For windows machines, the installation is different depending on the OS version. **Windows Home** will have a different installation procedure compared to **Windows Pro**. This is important because Home Edition will require **WSL - Windows Subsistem Linux**, while Proffesional Edition will only require Hyper-V.
 
 > [!IMPORTANT]
-> Hyper-V and Containers Windows features must be enable to install Docker Desktop on Windows.
+> The **Hyper-V** and **Containers** features must be propperly enabled to install Docker Desktop on Windows.
 > To enable Hyper-V on Windows follow this link. [Enable Hyper-V fast guide](https://github.com/JasonDGian/Docker-Kubernetes-Course/blob/main/1.2-enable-hyper-v.md)
 
+<table>
+   <tr>
+      <td>   
+         After assuring WSL and Hyper-V are enabled and functional we can procceed with the installation process through the installation wizard.   
+        Download the relevant version of <strong>Docker Desktop</strong> from the <a href="https://docs.docker.com/desktop/install/windows-install">official website</a> and follow the steps.   
+        Once the installation is finished, if needed, enable the automatic docker service startup.   
+      </td>
+      <td width="30%">
+         <img align="right" src="https://github.com/user-attachments/assets/1a874241-8741-497e-bb2f-bf910d83daf2">
+      </td> 
+   </tr>
+</table>
+
+
+   
+<br/>
+   
 <h2><img height="20px" src="https://github.com/user-attachments/assets/c51b89c4-c0bf-4e72-86f0-db15c6236101"> Linux  </h2>
-On Linux the operating system natively supports containers and the associated technology.
+The Linux operating system natively supports containers and the associated technology.
+In linux, though, an important distinction must be made between **Docker Engine** and **Docker Desktop**.
+Docker engine 
+
 
 For the installation follow the [official resources](https://docs.docker.com/desktop/install/linux-install) .  
 
@@ -29,9 +50,6 @@ To check if Docker successfully installed, open a terminal within your system, n
    
 ![docker command](https://github.com/user-attachments/assets/cabb9f65-42f1-495a-9f42-e085180ed99c)
 
-Congratulations, you have now installed the DOCKER ENGINE.
-
-   
 --- 
 
 # 📌 Create your first container.
@@ -41,10 +59,6 @@ Congratulations, you have now installed the DOCKER ENGINE.
 >   
 > <img width="380px" src="https://github.com/user-attachments/assets/4a0e7fa1-bcf1-416d-854b-b47926a3c4f3">
 > <img width="380px" src="https://github.com/user-attachments/assets/28dd9556-84bc-4163-b67e-b499317b1899">
-
-
-
-
 
 
 ![imagen](https://github.com/user-attachments/assets/f66ed9f4-1ebb-4a52-ada0-883396da9955)
