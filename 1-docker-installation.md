@@ -90,7 +90,9 @@ Current context is now "desktop-linux"
 2. Download the packages.
 3. Install the packages.
 4. Start the application.
-
+   
+--- 
+   
 0. Install docker engine.
 ```bash
  sudo pacman -S docker
