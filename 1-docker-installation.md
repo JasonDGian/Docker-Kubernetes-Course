@@ -122,7 +122,13 @@ sudo systemctl start docker
 sudo systemctl start docker-desktop
 ```
 
-5. Start Docker
+5. Add the user to the docker group.
+To avoid using sudo everytime you type a docker command, add the current user to the docker group.
+```bash
+sudo usermod -a -G docker $(whoami)
+```
+
+6. Start Docker
 This can be done either by terminal or by GUI.
 ![imagen](https://github.com/user-attachments/assets/3e1d9d5c-af2f-4f53-907f-ce4b4f725980)
 
