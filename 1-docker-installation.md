@@ -139,8 +139,8 @@ Now - regardless your OS installation - run the test command to check if the ins
 ```bash
 docker run hello-world
 ```
+![imagen](https://github.com/user-attachments/assets/beea4645-32fa-4c52-9d2a-35595f9aac4a)
 
-![imagen](https://github.com/user-attachments/assets/5b07f322-912e-4f84-999d-fbcb2e3c8d81)
 
 
 >[!TIP]
