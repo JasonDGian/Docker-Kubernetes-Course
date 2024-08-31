@@ -39,11 +39,45 @@ For windows machines, the installation is different depending on the OS version.
    
 <h2><img height="20px" src="https://github.com/user-attachments/assets/c51b89c4-c0bf-4e72-86f0-db15c6236101"> Linux  </h2> 
     
-The Linux operating system natively supports containers and the associated technology, you can either install **Docker Desktop** like in Windows and Mac or directly install the **Docker Engine**.
+The Linux operating system **natively supports** containers and the associated technology, you can either install **Docker Desktop** like in Windows and Mac or directly install the **Docker Engine**.
 For more information about the differences between the two check out [docker components](https://github.com/JasonDGian/Docker-Kubernetes-Course/blob/main/1.1-docker-components.md).
 
 **Installing Docker Desktop**
 
+1. Disable the system's native Docker Engine service.
+2. Check the docker context.
+3. 
+
+Docker Desktop for Linux provides a user-friendly graphical interface that simplifies the management of containers and services. It includes Docker Engine as this is the core technology that powers Docker containers. Docker Desktop for Linux also comes with additional features like Docker Scout and Docker Extensions.
+
+### ▫️ Disabling native Docker Engine.
+On Linux, a Docker Engine instance can run concurrently with a Docker Desktop instance, this can cause issues.Disabling the system's Docker Engine will avoid these issues and even provide a better resource management and experience.
+
+**Check if the service is enabled**
+```bash
+sudo systemctl status docker
+```
+
+Use the following command to stop the Docker Engine service:
+```bash
+sudo systemctl stop docker docker.socket containerd
+sudo systemctl disable docker docker.socket containerd
+```
+
+### ▫️ Docker context.
+The Docker CLI can be used to interact with multiple Docker Engines. For example, you can use the same Docker CLI to control a local Docker Engine and to control a remote Docker Engine instance running in the cloud. Docker Contexts allow you to switch between Docker Engines instances.
+
+When installing Docker Desktop, a dedicated "desktop-linux" context is created to interact with Docker Desktop. On startup, Docker Desktop automatically sets its own context (desktop-linux) as the current context. This means that subsequent Docker CLI commands target Docker Desktop. On shutdown, Docker Desktop resets the current context to the default context.
+
+Use the `docker context ls` command to view what contexts are available on your machine. 
+**The active context is marked with `*`**
+
+```bash
+docker context ls
+NAME            DESCRIPTION                               DOCKER ENDPOINT                                  ...
+default *       Current DOCKER_HOST based configuration   unix:///var/run/docker.sock                      ...
+desktop-linux                                             unix:///home/<user>/.docker/desktop/docker.sock  ...
+```
 
 For the installation follow the [official resources](https://docs.docker.com/desktop/install/linux-install) .  
 
