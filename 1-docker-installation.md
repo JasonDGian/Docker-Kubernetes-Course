@@ -89,7 +89,8 @@ Current context is now "desktop-linux"
 1. Install gnome terminal.
 2. Download the packages.
 3. Install the packages.
-4. Start the application.
+4. Enable services.
+5. Start the application.
    
 --- 
    
@@ -113,11 +114,18 @@ sudo pacman -U path-to-package
 ![imagen](https://github.com/user-attachments/assets/471bca2c-3616-4b4c-97b6-f8cbf1ed56c9)
 **By default, Docker Desktop is installed at /opt/docker-desktop.**
 
-4. Start Docker
+4. Enable the services.
+```bash
+sudo systemctl enable docker
+sudo systemctl enable docker-desktop
+sudo systemctl start docker
+sudo systemctl start docker-desktop
+```
+
+5. Start Docker
 This can be done either by terminal or by GUI.
 ![imagen](https://github.com/user-attachments/assets/3e1d9d5c-af2f-4f53-907f-ce4b4f725980)
 
-For the installation follow the [official resources](https://docs.docker.com/desktop/install/linux-install) .  
 
 ## 🔹 Confirm the success of the installation.
 To check if Docker successfully installed, open a terminal within your system, no matter which one, and type `docker`. A list of possible command switches will appear on scren, otherwise, if you encounter an error message something must have gone wrong during the installation process.
