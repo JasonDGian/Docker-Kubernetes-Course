@@ -37,10 +37,12 @@ For windows machines, the installation is different depending on the OS version.
    
 <br/>
    
-<h2><img height="20px" src="https://github.com/user-attachments/assets/c51b89c4-c0bf-4e72-86f0-db15c6236101"> Linux  </h2>
-The Linux operating system natively supports containers and the associated technology.
-In linux, though, an important distinction must be made between **Docker Engine** and **Docker Desktop**.
-Docker engine 
+<h2><img height="20px" src="https://github.com/user-attachments/assets/c51b89c4-c0bf-4e72-86f0-db15c6236101"> Linux  </h2> 
+    
+The Linux operating system natively supports containers and the associated technology, you can either install **Docker Desktop** like in Windows and Mac or directly install the **Docker Engine**.
+For more information about the differences between the two check out [docker components](https://github.com/JasonDGian/Docker-Kubernetes-Course/blob/main/1.1-docker-components.md).
+
+**Installing Docker Desktop**
 
 
 For the installation follow the [official resources](https://docs.docker.com/desktop/install/linux-install) .  
