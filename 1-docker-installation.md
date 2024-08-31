@@ -79,6 +79,10 @@ default *       Current DOCKER_HOST based configuration   unix:///var/run/docker
 desktop-linux                                             unix:///home/<user>/.docker/desktop/docker.sock  ...
 ```
 
+**To select a context use the following command:**
+`docker context use <docker-context-name>`
+
+
 For the installation follow the [official resources](https://docs.docker.com/desktop/install/linux-install) .  
 
 ## 🔹 Confirm the success of the installation.
