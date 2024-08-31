@@ -43,11 +43,6 @@ The Linux operating system **natively supports** containers and the associated t
 For more information about the differences between the two check out [docker components](https://github.com/JasonDGian/Docker-Kubernetes-Course/blob/main/1.1-docker-components.md).
 
 **Installing Docker Desktop**
-
-1. Disable the system's native Docker Engine service.
-2. Check the docker context.
-3. 
-
 Docker Desktop for Linux provides a user-friendly graphical interface that simplifies the management of containers and services. It includes Docker Engine as this is the core technology that powers Docker containers. Docker Desktop for Linux also comes with additional features like Docker Scout and Docker Extensions.
 
 ### ▫️ Disabling native Docker Engine.
@@ -90,6 +85,10 @@ Current context is now "desktop-linux"
 ```
 
 ## Installation on Arch-based distros.
+1. Install gnome terminal.
+2. Download the packages.
+3. Install the packages.
+4. Start the application.
 
 1. Install gnome-terminal.
 ```bash
