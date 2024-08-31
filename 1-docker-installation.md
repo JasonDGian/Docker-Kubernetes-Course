@@ -140,6 +140,9 @@ Now - regardless your OS installation - run the test command to check if the ins
 docker run hello-world
 ```
 
+![imagen](https://github.com/user-attachments/assets/5b07f322-912e-4f84-999d-fbcb2e3c8d81)
+
+
 >[!TIP]
 > By installing `Prettier`and `Docker` plugins on Visual Studio Code you will have a better experience while writing Docker configuration files.
 >   
