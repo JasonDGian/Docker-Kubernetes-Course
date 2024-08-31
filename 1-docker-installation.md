@@ -93,7 +93,7 @@ Current context is now "desktop-linux"
 
 0. Install docker engine.
 ```bash
- sudo pacman -S 
+ sudo pacman -S docker
 ```
 
 1. Install gnome-terminal.
