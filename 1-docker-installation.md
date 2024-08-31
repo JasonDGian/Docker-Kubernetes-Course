@@ -124,8 +124,10 @@ sudo systemctl start docker-desktop
 
 5. Add the user to the docker group.
 To avoid using sudo everytime you type a docker command, add the current user to the docker group.
+These commands add the user to the docker and the kvm group allowing the user to use docker and the virtualization devices.
 ```bash
 sudo usermod -a -G docker $(whoami)
+sudo usermod -aG kvm $(whoami)
 ```
 
 6. Start Docker
