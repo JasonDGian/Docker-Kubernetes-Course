@@ -1,5 +1,5 @@
 # 📌 Install docker.
-To make docker work you need:
+To make docker work you need to enable Hyper-V or the official release packages depending on the OS.
 ## Windows.
 - Enable Hyper-V
 - Check if PRO or HOME edition.
