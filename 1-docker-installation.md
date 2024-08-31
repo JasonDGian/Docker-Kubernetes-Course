@@ -105,10 +105,10 @@ sudo pacman -U path-to-package
 ```
 ![imagen](https://github.com/user-attachments/assets/471bca2c-3616-4b4c-97b6-f8cbf1ed56c9)
 **By default, Docker Desktop is installed at /opt/docker-desktop.**
-4. 
 
-
-
+4. Start Docker
+This can be done either by terminal or by GUI.
+![imagen](https://github.com/user-attachments/assets/3e1d9d5c-af2f-4f53-907f-ce4b4f725980)
 
 For the installation follow the [official resources](https://docs.docker.com/desktop/install/linux-install) .  
 
