@@ -38,3 +38,10 @@ Linux can install Docker Engine and work without Docker Desktop.
   To expose a port simply use the switch `-p` followed by the ports you wish to expose.   
   For example: `-p 3000:3000`.
 
+
+## Expose an interactive session from the container to the machine.
+```bash
+docker run -it <image> 
+```
+
+
