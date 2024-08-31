@@ -135,13 +135,16 @@ To check if Docker successfully installed, open a terminal within your system, n
 --- 
 
 # 📌 Create your first container.
+Now - regardless your OS installation - run the test command to check if the installation is functional.
+```bash
+docker run hello-world
+```
 
 >[!TIP]
 > By installing `Prettier`and `Docker` plugins on Visual Studio Code you will have a better experience while writing Docker configuration files.
 >   
 > <img width="380px" src="https://github.com/user-attachments/assets/4a0e7fa1-bcf1-416d-854b-b47926a3c4f3">
 > <img width="380px" src="https://github.com/user-attachments/assets/28dd9556-84bc-4163-b67e-b499317b1899">
-
 
 ![imagen](https://github.com/user-attachments/assets/f66ed9f4-1ebb-4a52-ada0-883396da9955)
 
