@@ -89,6 +89,27 @@ desktop-linux
 Current context is now "desktop-linux"
 ```
 
+## Installation on Arch-based distros.
+
+1. Install gnome-terminal.
+```bash
+ sudo pacman -S gnome-terminal
+```
+2. Download the Docker binaries.   
+Docker does not have an Arch package repository. Binaries not included in the package must be installed manually before installing Docker Desktop. Download the latest Arch package from the [release notes](https://docs.docker.com/desktop/release-notes/).
+
+3. Install the package.     
+Install the downloaded package with any possible dependency needed.
+```bash
+sudo pacman -U path-to-package
+```
+![imagen](https://github.com/user-attachments/assets/471bca2c-3616-4b4c-97b6-f8cbf1ed56c9)
+**By default, Docker Desktop is installed at /opt/docker-desktop.**
+4. 
+
+
+
+
 For the installation follow the [official resources](https://docs.docker.com/desktop/install/linux-install) .  
 
 ## 🔹 Confirm the success of the installation.
