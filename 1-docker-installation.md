@@ -85,7 +85,7 @@ Current context is now "desktop-linux"
 ```
 
 ## Installation on Arch-based distros.
-0. Install docker engine.
+0. Install docker engine and buildX.
 1. Install gnome terminal.
 2. Download the packages.
 3. Install the packages.
@@ -97,6 +97,7 @@ Current context is now "desktop-linux"
 0. Install docker engine.
 ```bash
  sudo pacman -S docker
+ sudo pacman -S docker-buildx
 ```
 
 1. Install gnome-terminal.
