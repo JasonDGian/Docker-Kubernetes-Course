@@ -58,10 +58,11 @@ Linux can install Docker Engine and work without Docker Desktop.
   ## Exposing available ports automatically.
   We can also let Docker Desktop choose the available ports to avoid messing around with them.
   To do that just use the flag `-P` and docker will automatically set the ports.
-  To check which ports are configured in the container use the command `docker ps`
-  
+  To check which ports are configured in the container use the command `docker ps`   
+     
   ![imagen](https://github.com/user-attachments/assets/859e03c0-a43a-4146-838a-d97fc51ceaec)
 
+  The container ports will be set based on the ports specified in the EXPOSE instruction in the Dockerfile or the ports exposed by the image. When you use the -P flag, Docker automatically maps these exposed container ports to random high ports on the host machine.
   
 
 ## Expose an interactive session from the container to the machine.
