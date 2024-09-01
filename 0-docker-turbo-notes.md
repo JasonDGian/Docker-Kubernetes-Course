@@ -25,19 +25,36 @@ Linux can install Docker Engine and work without Docker Desktop.
 
 # 📌 Common use commands.
 
-  ## Docker build. 
-  `docker build <path to dockerfile>` builds a container image based on the dockerfile settings.
+  ## Build a docker image. 
+  Build a container image based on the dockerfile settings.
+  Everytime a change is made on the source files a new image must be built to include said changes.
+  ```bash
+  docker build <path to dockerfile>
+  ```  
 
-  ## Docker run. 
-  `docker run <imagename>` Runs the given image creating a container instance.
+  ## Creating and stopping Docker instances. 
+  Runs the given image creating a container instance based on it.
+  ```bash
+  docker run <imagename>
+  ```
+  Stops the container with said ID.
+  ```bash
+  docker stop <container ID>
+  ```
 
-  ## Docker stop.
-  `docker stop <container ID>` stops the container with said ID.
-
-  ## Exposing ports in a docker maching.
+  ## Exposing ports in a docker machine.
   To expose a port simply use the switch `-p` followed by the ports you wish to expose.   
-  For example: `-p 3000:3000`.
+  The syntax is as follows:
+  ```bash
+  Docker run -p <host-IP>:<host-ports>:<docker-ports>
+  ```
 
+  **Example:**
+  This nginex container will be accessible through 127.0.0.1:55010 on our host.
+  ```bash
+  docker run --myNginx -p 127.0.0.1:55010:80 nginx
+  ```
+  
 
 ## Expose an interactive session from the container to the machine.
 ```bash
