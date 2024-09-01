@@ -42,11 +42,11 @@ Linux can install Docker Engine and work without Docker Desktop.
   docker stop <container ID>
   ```
 
-  ## Exposing ports in a docker machine.
+  ## Exposing selected ports in a docker machine.
   To expose a port simply use the switch `-p` followed by the ports you wish to expose.   
   The syntax is as follows:
   ```bash
-  Docker run -p <host-IP>:<host-ports>:<docker-ports>
+  docker run -p <host-IP>:<host-ports>:<docker-ports>
   ```
 
   **Example:**
@@ -54,6 +54,13 @@ Linux can install Docker Engine and work without Docker Desktop.
   ```bash
   docker run --myNginx -p 127.0.0.1:55010:80 nginx
   ```
+
+  ## Exposing available ports automatically.
+  We can also let Docker Desktop choose the available ports to avoid messing around with them.
+  To do that just use the flag `-P` and docker will automatically set the ports.
+  To check which ports are configured in the container use the command `docker ps`
+  ![imagen](https://github.com/user-attachments/assets/859e03c0-a43a-4146-838a-d97fc51ceaec)
+
   
 
 ## Expose an interactive session from the container to the machine.
