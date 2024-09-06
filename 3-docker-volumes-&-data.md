@@ -24,12 +24,36 @@ Persistent data is also generated or modified during the container's operation, 
 
 Understanding these distinctions is crucial for effectively managing data in Docker containers.
 
-# Understanding Docker Volumes. 
+# 📌 Understanding Docker Volumes. 
    
-<img align="right" width="180px" src="https://github.com/user-attachments/assets/acb4afd1-7962-45f3-a715-ef2d1724b1fe">
     
-Docker volumes are directories on your host machine's hard drive that are mounted into containers. They act as a "folder passthrough", allowing containers to read from and write to the host system.   
-Unlike data stored directly inside a container, data in a volume persists even if the container is stopped, deleted, or restarted. This ensures that important data is not lost when the container lifecycle ends.   
-In summary, volumes provide a reliable way to manage persistent data in Docker, keeping it separate from the ephemeral nature of containers.
+
+
+<table>
+   <tr>
+      <td>
+         <p>
+Docker volumes are directories on your host machine's hard drive that are mounted into containers.<br/> They act as a "folder passthrough", allowing containers to read from and write to the host system. Unlike data stored directly inside a container, data in a volume persists even if the container is stopped, deleted, or restarted. This ensures that important data is not lost when the container lifecycle ends. <br/><br/> In other words, volumes provide a reliable way to manage persistent data in Docker, keeping it separate from the ephemeral nature of containers.
+            </p>
+         </td>
+      <td><img align="right" src="https://github.com/user-attachments/assets/acb4afd1-7962-45f3-a715-ef2d1724b1fe">
+</td>
+   </tr>
+</table>
+
+
+## 🔹 Creating volumes.
+A volume can be specified in several ways.
+- Specify a volume inside a Dockerfile.
+- Specify a volume in the docker run command.
+- 
+
+### ▫️ Adding a volume via Dockerfile.
+To add a volume in a Dockerfile, use the VOLUME instruction. This instruction accepts an array of paths, which specifies the directories inside the container that will be used to mount directories from the host system. However, this command only determines where the volume will be mounted within the container, not which host directories will be used for storage.
+
+```bash
+VOLUME ["container-mounting-point","container-mounting-point-2",...]
+```
+
 
 
