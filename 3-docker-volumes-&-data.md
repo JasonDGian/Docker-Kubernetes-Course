@@ -20,7 +20,7 @@ Temporary data is dynamic and created while the container is running.
 ## 🔹 Persistent Data   
 Persistent data is also generated or modified during the container's operation, but unlike temporary data, it is retained even after the container is stopped.
 - This data is stored outside the container using volumes or external databases/filesystems.
-- Volumes allow this data to be preserved across container restarts, making it ideal for scenarios where data continuity is necessary, such as database applications.
+- Volumes and Bind mounts allow this data to be preserved across container restarts, making it ideal for scenarios where data continuity is necessary, such as database applications.
 
 Understanding these distinctions is crucial for effectively managing data in Docker containers.
 
@@ -43,6 +43,13 @@ Docker volumes are directories on your host machine's hard drive that are mounte
 
 
 ## 🔹 Creating volumes.
+There are two types of volumes.
+- Anonymous volumes
+- Named volumes.
+
+When the developer does not assign a name to a volume, docker will automatically assign a hash-name to it and this is what we know as 'anonymous' volumes. The big problem with anonymous volumes is that they will cease to exist as soon as the attached container is shut down. 
+
+
 A volume can be specified in several ways.
 - Specify a volume inside a Dockerfile.
 - Specify a volume in the docker run command.
@@ -55,5 +62,23 @@ To add a volume in a Dockerfile, use the VOLUME instruction. This instruction ac
 VOLUME ["container-mounting-point","container-mounting-point-2",...]
 ```
 
+Anonymous volumes VS Named Volumes
+- Anonymous volumes are deleted once the depending container is deleted - Named volumes are persistent.
+- 
+- 
 
 
+To remove a volume 
+```bash
+docker volume rm VOLUME-NAME
+```
+
+To prune volumes.
+```bash
+docker volume prune
+```
+
+
+## 🔹 Anonymous volumes.
+## 🔹 Named volumes.
+## 🔹 Bind mounts.
