@@ -24,6 +24,12 @@ Persistent data is also generated or modified during the container's operation, 
 
 Understanding these distinctions is crucial for effectively managing data in Docker containers.
 
-Images, conatiners and volumes.
-Using arguments and environment variables.
+# Understanding Docker Volumes. 
+   
+<img align="right" width="180px" src="https://github.com/user-attachments/assets/acb4afd1-7962-45f3-a715-ef2d1724b1fe">
+    
+Docker volumes are directories on your host machine's hard drive that are mounted into containers. They act as a "folder passthrough", allowing containers to read from and write to the host system.   
+Unlike data stored directly inside a container, data in a volume persists even if the container is stopped, deleted, or restarted. This ensures that important data is not lost when the container lifecycle ends.   
+In summary, volumes provide a reliable way to manage persistent data in Docker, keeping it separate from the ephemeral nature of containers.
+
 
