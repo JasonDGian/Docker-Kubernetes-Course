@@ -103,7 +103,9 @@ To configure docker permissions follow these steps:
 - Click on file sharing.
 - Enter the new path to allow.
 - Restart docker desktop.
-![imagen](https://github.com/user-attachments/assets/6b39990f-eb75-4ee6-b67f-a70e85534e5b)
+   
+![imagen](https://github.com/user-attachments/assets/1e1c1491-e2f1-49f2-8d41-069cdf7c5423)
+
 
 
 
