@@ -25,15 +25,12 @@ Persistent data is also generated or modified during the container's operation, 
 Understanding these distinctions is crucial for effectively managing data in Docker containers.
 
 # 📌 Understanding Docker Volumes. 
-   
-    
-
 
 <table>
    <tr>
       <td>
          <p>
-Docker volumes are directories on your host machine's hard drive that are mounted into containers.<br/> They act as a "folder passthrough", allowing containers to read from and write to the host system. Unlike data stored directly inside a container, data in a volume persists even if the container is stopped, deleted, or restarted. This ensures that important data is not lost when the container lifecycle ends. <br/><br/> In other words, volumes provide a reliable way to manage persistent data in Docker, keeping it separate from the ephemeral nature of containers.
+Docker volumes are directories on your host machine's hard drive that are mounted into containers.<br/> They allow containers to read from and write to the host system. Unlike data stored directly inside a container, data in a volume persists even if the container is stopped, deleted, or restarted. This ensures that important data is not lost when the container lifecycle ends. <br/><br/> In other words, volumes provide a reliable way to manage persistent data in Docker, keeping it separate from the ephemeral nature of containers.
             </p>
          </td>
       <td><img align="right" src="https://github.com/user-attachments/assets/acb4afd1-7962-45f3-a715-ef2d1724b1fe">
@@ -41,6 +38,56 @@ Docker volumes are directories on your host machine's hard drive that are mounte
    </tr>
 </table>
 
+## 🔹 Anonymous volumes.
+When the developer does not assign a name to a volume, docker will automatically assign a hash-name to it and this is what we know as 'anonymous' volumes. Anonymous volumes, given their nameless nature, are hard to track and reuse and require manual cleanup. Anonymous volumes are managed by docker and their content is not accessible or editable from the host machine.
+
+## 🔹 Named volumes.
+
+
+## 🔹 Bind mounts.
+Bind mounts have some similarities with volumes, but the key difference is that we can decide where the folder path on the host machine is located. On top of that the folder content is editable and the container will 
+
+### Summary.
+
+![imagen](https://github.com/user-attachments/assets/ecd98e8b-3e10-41aa-97a2-5992b75a2407)
+
+
+<table border="1" cellpadding="10" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Managed by</th>
+      <th>Accessible by Developer</th>
+      <th>Usecase</th>
+      <th>Command to Create</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Anonymous Volume</td>
+      <td>Docker</td>
+      <td>No</td>
+      <td>Temporary storage for short-lived data</td>
+      <td><code>docker run -v /app busybox</code></td>
+    </tr>
+    <tr>
+      <td>Named Volume</td>
+      <td>Docker</td>
+      <td>No</td>
+      <td>Persistent storage, shared between containers</td>
+      <td><code>docker volume create myvolume</code></td>
+    </tr>
+    <tr>
+      <td>Bind Mount</td>
+      <td>Host</td>
+      <td>Yes</td>
+      <td>Development, real-time syncing between host and container</td>
+      <td><code>docker run -v /host/path:/container/path busybox</code></td>
+    </tr>
+  </tbody>
+</table>
+
+---
 
 ## 🔹 Creating volumes.
 There are two types of volumes.
@@ -62,12 +109,6 @@ To add a volume in a Dockerfile, use the VOLUME instruction. This instruction ac
 VOLUME ["container-mounting-point","container-mounting-point-2",...]
 ```
 
-Anonymous volumes VS Named Volumes
-- Anonymous volumes are deleted once the depending container is deleted - Named volumes are persistent.
-- 
-- 
-
-
 To remove a volume 
 ```bash
 docker volume rm VOLUME-NAME
@@ -79,6 +120,3 @@ docker volume prune
 ```
 
 
-## 🔹 Anonymous volumes.
-## 🔹 Named volumes.
-## 🔹 Bind mounts.
