@@ -39,7 +39,7 @@ Docker volumes are directories on your host machine's hard drive that are mounte
 </table>
 
 ## 🔹 Anonymous volumes.
-Anonymous volumes provide a method to add persistent storage to a container. However, these volumes are neither accessible nor editable from the host system. They are difficult to track and require manual clean-up.
+These volumes are neither accessible nor editable from the host system. They are difficult to track and require manual clean-up.
 If a container is removed automatically upon shutdown using the `--rm` flag, the attached anonymous volume will also be deleted. However, simply stopping or manually deleting a container does not remove its anonymous volume. 
 Every time a container is launched from an image configured with an anonymous volume, a new volume is created.
 
@@ -73,7 +73,17 @@ docker volume prune
 ```
 
 ## 🔹 Named volumes.
+Named volumes are not attached to specific containers and can not be created inside a dockerfile. Instead they must be assigned to a container at creation time.
 
+**Create a named volume**
+```bash
+docker volume create <volume-name>
+```
+
+**Assign volume**
+```bash
+docker run -v /path/in/container:<volume-name> image
+```
 
 ## 🔹 Bind mounts.
 Bind mounts have some similarities with volumes, but the key difference is that we can decide where the folder path on the host machine is located. On top of that the folder content is editable and the container will 
