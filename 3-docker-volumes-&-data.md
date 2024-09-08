@@ -39,7 +39,38 @@ Docker volumes are directories on your host machine's hard drive that are mounte
 </table>
 
 ## 🔹 Anonymous volumes.
-When the developer does not assign a name to a volume, docker will automatically assign a hash-name to it and this is what we know as 'anonymous' volumes. Anonymous volumes, given their nameless nature, are hard to track and reuse and require manual cleanup. Anonymous volumes are managed by docker and their content is not accessible or editable from the host machine.
+Anonymous volumes provide a method to add persistent storage to a container. However, these volumes are neither accessible nor editable from the host system. They are difficult to track and require manual clean-up.
+If a container is removed automatically upon shutdown using the `--rm` flag, the attached anonymous volume will also be deleted. However, simply stopping or manually deleting a container does not remove its anonymous volume. 
+Every time a container is launched from an image configured with an anonymous volume, a new volume is created.
+
+**Assign an anonymous volume to a container**   
+To assign an anonymous volume to a container there are two options. 
+- Commmand line: `-v /path/in/container`
+- Dockerfile: `VOLUME [ "/path/container/directory" ]`
+
+In both cases we must specify **where the managed volume will be mounted inside of the container**.
+Add the following instruction.
+
+**Via CLI**   
+```bash
+docker run -d -v /path/in/container image
+```
+   
+**Dockerfile**   
+```bash
+VOLUME [ "/path/container/directory" ]
+```
+
+**Delete anonymous volumes**
+To remove a volume 
+```bash
+docker volume rm VOLUME-NAME
+```
+
+To prune volumes.
+```bash
+docker volume prune
+```
 
 ## 🔹 Named volumes.
 
@@ -120,3 +151,18 @@ docker volume prune
 ```
 
 
+# 📍 Other Volume Operations.
+### List volumes
+```bash
+docker volume ls
+```
+
+### Delete volumes
+```bash
+docker volume rm <volume-id>
+```
+
+### Prune volumes
+```bash
+docker volume prune
+```
