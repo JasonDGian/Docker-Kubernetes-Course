@@ -86,7 +86,35 @@ docker run -v /path/in/container:<volume-name> image
 ```
 
 ## 🔹 Bind mounts.
-Bind mounts have some similarities with volumes, but the key difference is that we can decide where the folder path on the host machine is located. On top of that the folder content is editable and the container will 
+Bind mounts allow developers to specify a folder or file on the host machine that will be used as storage within the container. Changes made to the folder or file on the host are immediately reflected in the container, providing real-time synchronization between the host and container.
+
+
+Set up a bind mount
+
+-v <"absolute-host-path">/<path-in-container>
+
+
+**Important:**  
+When using bind mounts, make sure that docker's services have access to the folder or file you are mounting.  
+To configure docker permissions follow these steps:
+- Open docker desktop dashboard.
+- Click on settings.
+- Click on resources.
+- Click on file sharing.
+- Enter the new path to allow.
+- Restart docker desktop.
+![imagen](https://github.com/user-attachments/assets/6b39990f-eb75-4ee6-b67f-a70e85534e5b)
+
+
+
+
+
+
+
+
+
+
+
 
 ### Summary.
 
