@@ -7,7 +7,7 @@ Depending on your device's specifications, you will need to install either **Doc
 - **Docker Toolbox**: An alternative for devices that do not meet the requirements for Docker Desktop.
 
 >[!tip]
->To learn about Docker's requirements access the ![official documentation](https://docs.docker.com/desktop/install/mac-install/).
+>To learn about Docker's requirements access the [official documentation](https://docs.docker.com/desktop/install/mac-install/).
 
 <!-- h2>
 <img  height="20px" src="https://github.com/user-attachments/assets/3f88a71f-b453-4490-9f70-d4defb6c5b01"> MacOS.</h2 -->
